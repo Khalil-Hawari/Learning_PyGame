@@ -25,7 +25,7 @@ SCREEN_HEIGHT = 300
 class Player(pygame.sprite.Sprite):
   def __init__(self):
     super(Player, self).__init__()
-    self.surf = pygame.image.load("ship.bmp").convert()
+    self.surf = pygame.image.load("ship.dib").convert()
     self.surf.set_colorkey((255, 255, 255), RLEACCEL)
     self.surf = pygame.transform.rotate(self.surf, 270) #allows to rotate imgs
     self.rect = self.surf.get_rect(center = (0, SCREEN_HEIGHT/2))
